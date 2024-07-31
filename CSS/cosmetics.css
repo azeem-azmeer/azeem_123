@@ -1,0 +1,204 @@
+ /*cosmetics page starts here*/
+  /*cosmetics cover page starts here*/
+ .cosmetics-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../Image/cosmeticsbg.jpg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+ }
+  .cosmetics-bg .content {
+    text-align: center;
+    width: 60rem;
+    font-weight: bolder;
+    padding-bottom: -10rem
+  }
+  
+  .cosmetics-bg .content h3 {
+    color: white;
+    font-size: 7.5rem;
+    text-align: center;
+    margin-top: -20px;
+  }
+  .cosmetics-bg .content p {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+    font-weight: bolder;
+  }
+    /*cosmetics cover page ends here*/
+  /* Introduction about Cosmetics */
+  .heading{
+    font-size: 1.5rem;
+  }
+.container1 {
+    width: 1035px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  
+  .image-container {
+    flex: 6; /* Reduced flex value to make the image container smaller */
+    margin-right: 20px;
+  }
+  
+  .text-container {
+    flex: 8; /* Increased flex value to give more space to the text container */
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  
+  .text-container h2 {
+    color: black;
+    font-size: 2.8rem;
+  }
+  
+  img {
+    max-width: 100%; /* To ensure the image doesn't exceed its container */
+    max-height: 300px; /*  max-height to reduce the image size */
+    width: auto; 
+    height: auto; 
+  }  
+  /*cosmetic produts start here*/
+  .cosmetic-table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 8px;
+      /*border: 1px solid black;if needed*/
+  }
+  .cosmetic-table th ,td {
+    padding: 15px;
+    text-align: left;
+    /*border: 1px solid black; if needed*/
+  }
+  
+  .cosmetic-table th {
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    color: #131212;
+  }
+  .cosmetic-table tr {
+    font-size: medium;
+    color: var(--light-color); 
+    width: auto;
+  }
+  .cosmetic-table .price{
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+  .cosmetic-table,.brand{
+    font-size: 1.8rem;
+  }
+  .cosmetic-table .paragraph {
+    font-size: medium;
+}
+  .cosmetic-table tr:hover {
+    background-color: #ead6d6;
+    
+  }
+
+  .text-container .table-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .qty input[type="number"] {
+    width: 50px; 
+    border:2px solid rgb(95, 219, 192);
+  }
+  .product-name{
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    font-size: 2rem;
+  }
+  .buy-btn {
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .buy-btn:hover {
+    background:rgb(38, 209, 124);
+    color: black;
+    opacity: 0.9; 
+    transform: scale(1.1); 
+
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .btn3 {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #17ac7c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .btn3:hover {
+    background-color: #45a07d;
+    opacity: 0.9; 
+    transform: scale(1.1); 
+  }
+  /*cosmetic produts ends here*/
+  /*cosmetics page ends here*/
+
+  
+   /* Media Queries */
+  @media (max-width: 890px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+    .container1 {
+      flex-direction: column; /*  items vertically */
+      width: 90%;
+      margin: auto;
+    } 
+    .text-container{
+        margin-right:8px;
+        margin-left: 8px;
+    }
+    .cosmetic-table {
+        width: 100%;
+        margin: 0;
+      }
+    
+      .cosmetic-table th,
+      .cosmetic-table td {
+        padding: 5px;
+        font-size: 1.1rem;
+      }
+    
+      .cosmetic-table th {
+        font-size: 1.6rem;
+        text-align: left;
+      }
+    
+      .cosmetic-table .price,
+      .cosmetic-table .product-name,
+      .cosmetic-table tr {
+        font-size: 2rem; 
+      }
+      .paragraph{
+        display: none;
+      }
+      .text-container .table-heading {
+        font-size: 2rem;
+      }
+    
+    
+  }

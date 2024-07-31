@@ -1,0 +1,296 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-In-One</title>
+    <!--Fav Icon-->
+    <link rel="icon" href="./Image/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <!--Css Links-->
+    <link rel="stylesheet" href="./CSS/main.css " type="text/css">
+    <link rel="stylesheet" href="./CSS/oder.css" type="text/css">
+    
+   <!--favicon-->
+  <link rel="manifest" href="https://progressier.app/0yQOf1Z0rr0IQ8zA78cU/progressier.json"/>
+  <script defer src="https://progressier.app/0yQOf1Z0rr0IQ8zA78cU/script.js"></script> 
+
+  <!--Font awesesome cdn link-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+</head>
+<body>
+    <!--Header Section Starts Here-->
+    <header class="header">
+       <!-- Logo -->
+      <a href="./index.html" class="logo"><i class="fas fa-shopping-basket"></i>All-In-One</a>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul class="navmenu">
+          <li><b><a href="index.html">Home</a></b></li>
+          <li><b><a href="./about.html">About us</a></b></li>
+          <li><b><a href="./product.html">Products</a></b></li>
+          <li><b><a href="./oder.html">Order</a></b></li>
+          <li><b><a href="./loyreg.html">Loyalty Registration</a></b></li>
+        </ul>
+        <form id="search-form">
+          <input type="search" id="search-box" placeholder="Search..." aria-label="Search through site content">
+          <div id="search-button">
+                <i class="fas fa-search"></i>
+          </div>
+        </form>
+      </nav>
+      <!-- Icons for Mobile Menu, Cart, and User Account -->
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>
+      </div>
+    </header>
+    <!--Header Section ends Here-->
+    <main>
+        <!--Oder Form-->
+        <h1 class="heading">Oder <span> Page</span></h1>
+        <form id="orderForm">
+            <h1 class="heading1">Fruits</h1>
+            <div class="category" id="fruits">
+
+                <div class="product">
+                    <img src="./Image/appple.jpg" alt="Apples">
+                    <label>Apples (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="3"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/watermelon.jpg" alt="Watermelon">
+                    <label>Watermelon (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="1"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/orange.jpg" alt="Oranges">
+                    <label>Oranges (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="2.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/grapes.webp" alt="Grapes">
+                    <label>Grapes (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="4"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/mango.jpg" alt="Mangoes">
+                    <label>Mangoes (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/stawberry.jpg" alt="Strawberries">
+                    <label>Strawberries (per kg): <input type="number" min="0" step="0.01" data-category="fruit" data-price="6"></label>
+                </div>
+            </div>
+
+            <h1 class="heading1">Vegetables</h1>
+            <div class="category" id="vegetables">
+               
+                <div class="product">
+                    <img src="./Image/carrot.jpg" alt="Carrots">
+                    <label>Carrots (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="2"></label>
+                </div> <div class="product">
+                    <img src="./Image/Potatoe.jpg" alt="Potatoes">    
+                    <label>Potatoes (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="1.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/tomato.jpeg" alt="Tomatoes">
+                    <label>Tomatoes (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="3"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/brocoli.jpg" alt="Broccoli">
+                    <label>Broccoli (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="4"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/onions.jpg" alt="Onions ">
+                    <label>Onions (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="2.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/Pumpkin.png" alt="Pumpkin ">
+                    <label>Pumpkin (per kg): <input type="number" min="0" step="0.01" data-category="vegetable" data-price="3.5"></label>
+                </div>
+            </div>
+
+            <h1 class="heading1">Dairy Products</h1>
+            <div class="category" id="dairy">
+             
+                <div class="product">
+                    <img src="./Image/milk1.jpg" alt="Milk ">
+                    <label>Milk (liters): <input type="number" min="0" data-category="dairy" data-price="1.2"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/cheese1.Jpg" alt="Cheese">
+                    <label>Cheese (quantity): <input type="number" min="0" data-category="dairy" data-price="3"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/butter .jpg" alt="Butter">
+                    <label>Butter (quantity): <input type="number" min="0" data-category="dairy" data-price="2.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/yog3.jpg" alt="Yogurt">
+                    <label>Yogurt (quantity): <input type="number" min="0" data-category="dairy" data-price="1.8"></label>
+                </div>
+                <div class="product">
+                    <img src="../Image/Eggs.jpg" alt="Eggs ">
+                    <label>Eggs (quantity): <input type="number" min="0" data-category="dairy" data-price="0.2"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/curd.png" alt="Curd">
+                    <label>Curd (quantity): <input type="number" min="0" data-category="dairy" data-price="1.5"></label>
+                </div>
+            </div>
+
+            <h1 class="heading1">Meat and Seafood</h1>
+            <div class="category" id="meat">
+               
+                <div class="product">
+                    <img src="./Image/chicken.jpeg" alt="Chicken">
+                    <label>Chicken (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="6"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/beef1.jpg" alt="Beef">
+                    <label>Beef (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="8"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/fish1.jpg" alt="Fish ">
+                    <label>Fish (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="10"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/salmon.avif" alt="Salmon ">
+                    <label>Salmon (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="10"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/lobster.jpg" alt="Lobster">
+                    <label>Lobster (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="10"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/prawns.webp" alt="Prawn">    
+                    <label>Prawn (per kg): <input type="number" min="0" step="0.01" data-category="meat" data-price="12"></label>
+                </div>
+            </div>
+
+            <h1 class="heading1">Baking and Cooking Ingredients</h1>
+            <div class="category" id="baking">
+                
+                <div class="product">
+                    <img src="./Image/flour.jpeg" alt="Flour ">
+                    <label>Flour (kg): <input type="number" min="0" step="0.01" data-category="baking" data-price="1.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/sugar.webp" alt="Sugar">
+                    <label>Sugar (kg): <input type="number" min="0" step="0.01" data-category="baking" data-price="2"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/salt1.avif" alt="Salt">
+                    <label> Brown Sugar(kg): <input type="number" min="0" step="0.01" data-category="baking" data-price="0.5"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/butter .jpg" alt="Butter">
+                    <label>Butter (kg): <input type="number" min="0" data-category="baking" data-price="1"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/vanilla extract.webp" alt="Vanilla Extract">
+                    <label>Vanilla Extract (liters): <input type="number" min="0" step="0.01" data-category="baking" data-price="4"></label>
+                </div>
+                <div class="product">
+                    <img src="./Image/yeast.jpg" alt="Yeast">
+                    <label>Yeast (quantity): <input type="number" min="0" data-category="baking" data-price="0.5"></label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="addToFavourites">Add to Favourites</button>
+                <button type="button" id="applyFavourites">Apply Favourites</button>
+                <button type="button" id="buyNow">Buy Now</button>
+            </div>
+        </form>
+        <!--Oder Table-->
+        <section class="order-summary">
+            <h2>Current Order</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="totalPrice">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+   <!-- Footer Section Starts  -->
+   <footer>
+        <section class="footer">
+            <div class="box-container">
+                <!-- Company Information -->
+                <div class="box">
+                <h3> <i class="fas fa-shopping-basket" style="color: rgb(28, 150, 123);"> </i>All-In-One </h3>
+                <p>
+                    Your One Stop Shopping Destination.
+                </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a
+                    ><a href="#" class="fab fa-twitter"></a
+                    ><a href="#" class="fab fa-instagram"></a
+                    ><a href="#" class="fab fa-linkedin"></a>
+                </div>
+                </div>
+            <!-- Products Links -->
+          <div class="box">
+                <h3>Products</h3>
+                <a href="./vegitables.html" class="links"
+                ><i class="fas fa-arrow-right"></i> Vegitable
+                </a>
+                <a href="./fruits.html"class="links"
+                ><i class="fas fa-arrow-right"></i> Fruits
+                </a>
+                <a href="./dairyproducts.html" class="links"
+                ><i class="fas fa-arrow-right"></i> Dairy products
+                </a>
+                <a href="./meat&seafood.html"class="links"
+                ><i class="fas fa-arrow-right"></i> Meat and Seafood
+                </a>
+                <a href="./baking&cooking.html"class="links"
+                ><i class="fas fa-arrow-right"></i> Baking and Cooking Ingredients
+                </a>
+                <a href="./cosmetics.html" class="links"
+                ><i class="fas fa-arrow-right"></i> Cosmetics
+                </a>
+          </div>
+                <!-- Quick Links -->
+                <div class="box">
+                <h3>Quick Links</h3>
+                <a href="./index.html" class="links"
+                    ><i class="fas fa-arrow-right"></i> Home
+                </a>
+                <a href="./about.html" class="links"
+                    ><i class="fas fa-arrow-right"></i> About us
+                </a>
+                <a href="./product.html" class="links"
+                    ><i class="fas fa-arrow-right"></i>Products
+                </a>
+                <a href="./oder.html" class="links"
+                    ><i class="fas fa-arrow-right"></i> Order
+                </a>
+                <a href="./loyreg.html" class="links"
+                    ><i class="fas fa-arrow-right"></i> Loyalty Registration
+                </a>
+                </div>
+            </div>
+            <!-- Footer Credit -->
+            <div class="credit">
+                Created By <span>Azeem Azmeer.</span> | All Rights
+                Reserved
+            </div>
+        </section>
+    </footer>    
+    
+</body>
+</html>

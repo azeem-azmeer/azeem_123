@@ -1,0 +1,206 @@
+body {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(255, 255, 255, 0)
+        ),
+        url(../Image/vegetables-background.jpg) center center / cover no-repeat fixed;
+    
+    padding-top: 90px;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+#search-button i {
+    font-size: 2rem;
+    position: relative;
+    top: 13px; /* Move the icon 2px down */
+}
+/*oder form*/
+
+#orderForm {
+    width: 50%; /* Adjusted width to make container smaller */
+    margin: 0 auto; /* Center the container */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column to stack categories */
+    gap: 1rem; /* Space between categories */
+    
+}
+
+/* Each category styling */
+.category {
+    width: 100%; /* Adjust to fit container */
+    max-height: 300px; /* Set a maximum height for vertical scrolling */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for products */
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1.5rem; /* Reduced padding */
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+    margin-bottom: 1rem; /* Space between categories */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling if not needed */
+    background: rgba(255, 255, 255, 0.9); /* Translucent background */
+}
+
+/* Styling for the form items */
+.category .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    min-width: 120px; /* Adjusted minimum width */
+    white-space: normal; /* Allow text wrapping if needed */
+}
+
+.product img {
+    width: 140px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.heading {
+    color: white;
+}
+.heading1 {
+    color: rgb(255, 255, 255); /* Change to match your theme */
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+    width: calc(80% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(28, 150, 123);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 2px;
+}
+
+button:hover {
+    color: rgb(196, 207, 197);
+    opacity: 0.9;
+   
+}
+
+.buttons {
+    text-align: center;
+}
+
+/*oder table*/
+
+.order-summary {
+    background: rgba(255, 255, 255, 0.9); /* Translucent background */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #orderForm {
+        width: 80%; /* Adjusted width for smaller screens */
+    }
+
+    .category {
+        max-height: 250px; /* Reduced max-height for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+
+    .product img {
+        width: 100px; /* Smaller images on smaller screens */
+    }
+    .order-summary{
+        width: 80%;
+    }
+    .table {
+        width: auto;
+      }
+    
+      .table th,
+      .table td {
+        font-size: auto;
+      }
+}
+
+
+@media (max-width: 480px) {
+    #orderForm {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .category {
+        max-height: 200px; /* Further reduced max-height for very small screens */
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .product img {
+        width: 80px; /* Even smaller images on very small screens */
+    }
+    .order-summary{
+        width: 100%;
+    }
+    .table {
+        width: auto;
+      }
+    
+      .table th,
+      .table td {
+        font-size: auto;
+      }
+  }

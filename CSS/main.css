@@ -1,0 +1,373 @@
+:root {
+   /* Defining  properties (CSS variables) for reuse */
+    --light-color: #006;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    /* Applying these styles universally to all elements */
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+ body{
+    background: white;
+ }
+ section {
+   padding: 2rem 9%;
+ }
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+    background: whitesmoke;
+    box-shadow: black;
+    height: auto;
+ }
+  /*logo style*/
+ .header .logo {
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color: black;
+   margin-left: 20px;
+  }
+
+ .header .logo i {
+    color: rgb(28, 150, 123);
+    margin-right: auto;
+    margin: 5px;
+    scroll-padding: auto;
+  }
+  /*navbar style*/
+ .header .navbar a {
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 10px;
+    color: black;
+    
+  }
+  .header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    color: black;
+  }
+  .navbar li {
+    margin: 0 10px;
+  }
+
+  .header .navbar a:hover {
+    color:green;
+ }
+ .header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: rgb(255, 253, 253);
+    color: black;
+    font-size: 2rem;
+    margin-top: 1.8;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+   
+ }
+ .header .icons div:hover{
+    background:  rgb(28, 150, 123);
+    color: black;
+ }
+ #menu-btn{
+  display: none;
+}
+  .icons{
+    margin-right: 40px;
+  }
+ 
+  #search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+    margin-left: 100px;
+    margin-top: 7px;
+  }
+
+  #search-box {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    width: 500px;
+    align-items: center;
+    margin-left: 45px;
+  }
+  #search-button {
+    height: 4.3rem;
+    width: 4.3rem;
+    line-height: 4.3rem;
+    border-radius: 20rem;
+    background: white;
+    color:white;
+    font-size: 2rem;
+    margin-right: 0.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #search-button i {
+    font-size: 18px;
+    color: #131313;
+  }
+  
+  #search-button:hover {
+    background-color:  rgb(28, 150, 123);
+  }
+  
+  #search-button:hover i {
+    color: #fff;
+  }
+  /*btn style*/
+   .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+    color: black;
+    background: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background:rgb(38, 181, 76);
+    color: black;
+  }  
+  /*heading style*/
+  .heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: -10px;
+  }
+  
+  .heading span {
+    background: rgb(28, 150, 123);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  }
+  
+ /*horizontal line*/
+  hr {
+    border: none;
+    border-top: 2px solid  rgb(28, 150, 123); 
+    margin: 10px 0;
+  }
+  /*favourite button styling*/
+  .btn.favourite {
+    border: 0.2rem solid black;
+    color: black;
+    padding: 5px 10px; 
+    font-size: 20px;   
+    }
+
+  .btn.favourite:hover {
+    background:rgb(38, 181, 76);
+    color: black;
+  
+  }
+    .btn i {
+    margin-right: 3px; 
+    }
+
+ 
+ /*footer starts here*/
+  .footer {
+    background: whitesmoke;
+  }
+  
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    padding-left: 100px; 
+    
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box h3 i {
+    color: green;
+  }
+  
+  .footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 0.8rem 0;
+  }
+  
+  .footer .box-container .box .links i {
+    color: green;
+  }
+  
+  .footer .box-container .box .links:hover i {
+    padding-right: 1rem;
+   
+  }
+  
+  .footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: -1rem 0rem;
+    margin-left: -40px;
+  }
+  
+  .footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    color: black;
+    margin-left: 0.2rem;
+    background: #eee;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer .box-container .box .share a:hover {
+    background: rgb(55, 207, 174);
+    color:  rgb(0, 0, 0);
+  }
+  
+  .footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-bottom: 6px;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-top: var(--border);
+  }
+  
+  .footer .credit span {
+    color:  rgb(28, 150, 123);
+  }
+/*footer ends here*/
+
+ /*Websites Images Were Taken From
+ https://www.freepik.com/
+ https://unsplash.com/
+ https://www.pexels.com/
+ https://www.istockphoto.com/photos/supermarket
+ https://www.gettyimages.com/
+ https://www.istockphoto.com/
+ https://www.freeimages.com/
+ https://stock.adobe.com/search?k=inside%20supermarket*/
+
+
+/* Media Queries */
+@media (max-width: 890px) {
+  .navmenu {
+    position: fixed;
+    top: -20px;
+    right: -100%;
+    width: 32%;
+    height: 52%;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    text-align: center;
+    font-size: small;
+    gap: 1rem;
+  }
+  
+  #menu-btn {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: auto; 
+  }
+
+ .icons{
+  margin-top: -8px;
+  align-items: right;
+ }
+ .logo{
+  margin-top: -8px;
+  margin-left: 5px;
+ }
+ .footer{
+  margin-left: -10px;
+ }
+  
+}
+
+@media (max-width: 750px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .search-form {
+    width: 90%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  .box {
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
+
+
+
+
+
